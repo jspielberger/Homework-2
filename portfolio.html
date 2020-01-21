@@ -72,17 +72,27 @@
             width: 100%;
 
         }
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1200px) and (min-width: 580px) {
 
             .card-body {
                 height: auto;
 		        width: auto;
-	            }   
+	            }
+             
         }
+        @media screen and (max-width: 781px) and (min-width: 575px) {
+            .btn .btn-primary {
+                width: auto;
+                font-size: 30px;
+                margin-left: 30%;
+            }
+        }
+
+
 
         .btn {
             margin-left: 30%;
-            width: 40%;
+            width: auto;
             height: 10%;
             font-family: bitter;
             text-transform: uppercase;
