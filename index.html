@@ -6,9 +6,60 @@
 
     <meta charset="UTF-8">
     <title>My First Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- We need to bring in the bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Bitter|Fira+Sans+Condensed|Gelasio|PT+Serif|Shadows+Into+Light&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: linear-gradient(violet, red);
+        }
+
+        footer {
+            background-image: linear-gradient(silver, gold);
+        }
+
+        p a:hover {
+            background-color: yellow;
+            font: black;
+        }
+
+        li a:hover {
+            background-color: black;
+        }
+        @media screen and (max-width: 1150px) and (min-width: 585px) {
+
+                body {
+                     width: auto;
+                     }
+                iframe {
+                    width: auto;
+                    padding-right: 5%;
+                }
+            }
+        p {
+            font-family: Bitter;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .img-thumbnail {
+            border-style: groove;
+            border: black;
+            border-style: double;
+        }
+        h1 {
+            color: black;
+            font-family: Bitter;
+            font-weight: bolder;
+        }
+    </style>
 
 </head>
 
@@ -16,6 +67,7 @@
 
     <!-- NavBar (copied and pasted from WC3) -->
     <!-- Static navbar -->
+    <!--add @media query for 1000px width for all files-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">Joel Spielberger</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -23,7 +75,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
                 </li>
@@ -31,117 +83,58 @@
                     <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="container">
+        <div class="page-header">
+            <h1>About</h1>
+        </div>
         <!-- Main Body goes in Container -->
         <div class="row">
-
-            <div class="col-md-8">
-
-                <div class="page-header">
-                    <h1>About Me</h1>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-md-3">
-                        <img class="img img-thumbnail"
-                            src="https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/leorio-paladiknight-hunter-x-hunter-2011-0.87.jpg"
-                            alt="Placeholder">
-                    </div>
-
-                    <!--ipsum col column-->
-                    <div class="col-md-9">
-                        <p>Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem
-                            Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf
-                            anonim a
-                            luat o
-                            planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele
-                            respective.
-                            Nu
-                            doar că a supravieţuit timp de cinci secole, dar şi a facut saltul în tipografia electronică
-                            practic
-                            neschimbată. A fost popularizată în anii '60 odată cu ieşirea colilor Letraset care
-                            conţineau pasaje
-                            Lorem Ipsum, iar mai recent, prin programele de publicare pentru calculator, ca Aldus
-                            PageMaker care
-                            includeau versiuni de Lorem Ipsum.</p>
-                        <p>Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem
-                            Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf
-                            anonim a
-                            luat o
-                            planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele
-                            respective.
-                            Nu
-                            doar că a supravieţuit timp de cinci secole, dar şi a facut saltul în tipografia electronică
-                            practic
-                            neschimbată. A fost popularizată în anii '60 odată cu ieşirea colilor Letraset care
-                            conţineau pasaje
-                            Lorem Ipsum, iar mai recent, prin programele de publicare pentru calculator, ca Aldus
-                            PageMaker care
-                            includeau versiuni de Lorem Ipsum.</p>
-                        <p>Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem
-                            Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf
-                            anonim a
-                            luat o
-                            planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele
-                            respective.
-                            Nu
-                            doar că a supravieţuit timp de cinci secole, dar şi a facut saltul în tipografia electronică
-                            practic
-                            neschimbată. A fost popularizată în anii '60 odată cu ieşirea colilor Letraset care
-                            conţineau pasaje
-                            Lorem Ipsum, iar mai recent, prin programele de publicare pentru calculator, ca Aldus
-                            PageMaker care
-                            includeau versiuni de Lorem Ipsum.</p>
-                        <p>Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem
-                            Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf
-                            anonim a
-                            luat o
-                            planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele
-                            respective.
-                            Nu
-                            doar că a supravieţuit timp de cinci secole, dar şi a facut saltul în tipografia electronică
-                            practic
-                            neschimbată. A fost popularizată în anii '60 odată cu ieşirea colilor Letraset care
-                            conţineau pasaje
-                            Lorem Ipsum, iar mai recent, prin programele de publicare pentru calculator, ca Aldus
-                            PageMaker care
-                            includeau versiuni de Lorem Ipsum.</p>
-                    </div>
-
-                </div>
+            <div class="col-md-3">
+                <img class="img img-thumbnail"
+                    src="https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/leorio-paladiknight-hunter-x-hunter-2011-0.87.jpg"
+                    alt="Placeholder">
             </div>
-
-
-            <!--row-->
-            <!--thumbnail column-->
-            <div class="col-md-4">
-                <div class="card mt-2">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                    </div>
+            <!--ipsum col column-->
+            <div class="col-md-6">
+                <p>Welcome to my website! I hope you enjoy its' functionality!
+                    As a part of this homework I decided to write my
+                    own filler text. I often become disconcerted by the sight of the "Lorem Ipsum" nonsense
+                    and I wanted visitors to my website to have
+                    something fun to read or watch when they enter.
+                </p>
+                <p>As promised here is a lovely video of hokkaido puppies frolicking together!
+                </p>
+                <br>
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/HlyP59bgmmw?rel=0;&autoplay=1&mute=1&loop=1&playlist=HlyP59bgmmw"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <div class="row">
+                    <p>Now that you've been properly relaxed. How about checking out some photo examples from my <a
+                            href="portfolio.html" target="_blank">web development portfolio</a>?</p>
+                    <p>If you would like to contact me to talk about how amazing my website is please go to the <a
+                            href="contact.html" target="_blank">Contact</a> section of this website.</p>
                 </div>
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <p class="text-center">Check out this footer, it's dang sticky!</p>
+    </div>
+    <footer class="footer footer-default footer-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">"Check out this footer, it's dang sticky!"</h1>
+                    <h3 class="text-center">-Thomas Jefferson</h3>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+</div>
 
 </body>
 

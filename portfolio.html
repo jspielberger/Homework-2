@@ -5,20 +5,106 @@
 
     <meta charset="UTF-8">
     <title>My First Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- We need to bring in the bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Bitter|Fira+Sans+Condensed|Gelasio|PT+Serif|Shadows+Into+Light&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
+    <style>
+        body {
+            background-image: linear-gradient(maroon, pink);
+        }
+
+        footer {
+            background-image: linear-gradient(silver, gold);
+        }
+
+        p a:hover {
+            background-color: yellow;
+            font: black;
+        }
+
+        li a:hover {
+            background-color: black;
+        }
+
+        p {
+            font-family: Bitter;
+            font-weight: bold;
+        }
+
+        img {
+            border-style: groove;
+            border: black;
+            border-style: double;
+            image-rendering: crisp-edges;
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+
+        h1 {
+            color: black;
+            font-family: Bitter;
+            font-weight: bolder;
+        }
+
+        .card-body {
+            height: 500px;
+            width: 400px;
+        }
+
+        .card {
+            background-image: repeating-linear-gradient(lightblue, orange);
+        }
+
+        .card-body img {
+            border: black;
+            border-style: solid;
+            image-rendering: crisp-edges;
+            height: 300px;
+            width: 100%;
+
+        }
+        @media screen and (max-width: 1200px) {
+
+            .card-body {
+                height: auto;
+		        width: auto;
+	            }   
+        }
+
+        .btn {
+            margin-left: 30%;
+            width: 40%;
+            height: 10%;
+            font-family: bitter;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+    </style>
 </head>
+
+
 <body>
+
+    <!-- NavBar (copied and pasted from WC3) -->
+    <!-- Static navbar -->
+    <!--add @media query for 1000px width for all files-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Joel Spielberger</a>
+        <a class="navbar-brand" href="index.html">Joel Spielberger</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
                 </li>
@@ -26,19 +112,89 @@
                     <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="container">
+        <div class="page-header">
+            <h1>Portfolio</h1>
+        </div>
         <div class="row">
-            <div class="col-md-6">
-                <p>HELLO DONKAY</p>
+            <div class="col-sm-5">
+                <div class="card mt-3">
+                    <div class="card-body">
+
+                        <h5 class="card-title">Project 1</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Shrek the Movie Fanclub</h6>
+                        <img class="card-img-bottom"
+                            src="http://www.tntmagazine.com/media/content/_master/56529/images/shrek.jpg"
+                            alt="Placeholder">
+                        <br>
+                        <a href="#" class="btn btn-primary">Visit</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <img src="http://www.tntmagazine.com/media/content/_master/56529/images/shrek.jpg" alt="Placeholder">
+            <div class="col-sm-5">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Shrek 2 Political Action Committee</h6>
+                        <img class="card-img-bottom" src="https://pbs.twimg.com/media/DVNyEZEXkAAlfou.jpg"
+                            alt="Placeholder">
+                        <br>
+                        <a href="#" class="btn btn-primary">Visit</a>
+                    </div>
+                </div>
+
             </div>
-        </div>  
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Shrek The Third Fanhub and Merchandise Center</h6>
+                        <img class="card-subtitle mb-5"
+                            src="https://images.ctfassets.net/7h71s48744nc/2HtE4seEZa4OmKWgAA6k6A/7977f3912e75d6f816d0882f72d91569/shrek-the-third.jpg"
+                            alt="Placeholder">
+                        <br>
+                        <a href="#" class="btn btn-primary">Visit</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-5">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 4</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Shrek Forever After Memorial Fund</h6>
+                        <img class="card-subtitle mb-5"
+                            src="https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2010/04/136163-shrek_forever_after_422x218.jpg"
+                            alt="Placeholder">
+                        <br>
+                        <a href="#" class="btn btn-primary">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer class="footer footer-default footer-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">"Check out this footer, it's dang sticky!"</h1>
+                    <h3 class="text-center">-Thomas Jefferson</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     </div>
 </body>
+
+
+</html>
